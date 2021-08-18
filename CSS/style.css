@@ -19,13 +19,13 @@ html, body {
   padding: 75px 50px 123px;
 }
 
-.container {
+.container-one {
   max-width: 1500px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
-.header-container > .container {
+.header-container > .container-one {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +37,8 @@ html, body {
 
 .text-principal {
   font-size: 36px;
-  width: 349px;
+  max-width: 349px;
+  width: 100%;
   line-height: 47px;
 }
 
@@ -72,11 +73,18 @@ header p {
   height: 362px;
 }
 
+.container-two {
+  display: flex;
+  max-width: 1500px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 .main-content {
   display: grid;
   grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr));
   gap: 113px;
-  padding: 132px;
+  padding: 132px 150px;
 }
 
 .card {
@@ -177,7 +185,6 @@ textarea {
 
 .button-two {
   padding: 14px 10px;
-  width: 576px;
   background-color: var(--buttonColor);
   font-size: 20px;
   color: var(--white);
@@ -215,8 +222,108 @@ button:hover {
 }
 
 footer p {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px;
 }
+
+@media screen and (max-width: 1080px) {
+  .header-container  > .container-one {
+    padding: 57px 0 51px !important;
+  }
+  
+  .header-container > .container-one {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .box-one {
+    margin-bottom: 50px;
+  }
+
+  .text-principal {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .text-secundario {
+    text-align: center;
+  }
+
+  .button-responsive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-one {
+    padding: 15px 51px;
+  }
+
+  .image {
+    width: 400px;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  .main-content {
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+    padding: 100px 0;
+  }
+  
+  .text-card p {
+    color: var(--text);
+    font-size: 13px;
+    font-style: italic;
+  }
+
+  .container-cadastro {
+    padding: 50px 20px;
+  }
+
+  footer p {
+    margin: 20px;
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+  .header-container {
+    padding: 15px 0 0;
+  }
+
+  .header-container > .container-one {
+    padding: 0 0 15px !important;
+  }
+
+  .text-principal {
+    text-align: left;
+    max-width: 300px;
+    font-size: 30px;
+  }
+
+  .text-secundario {
+    text-align: left;
+    max-width: 300px;
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+
+  .button-responsive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image {
+    width: 300px;
+  }
+}
+
