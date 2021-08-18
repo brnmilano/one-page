@@ -2,11 +2,139 @@
 
 <html lang="pt-br">
 
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="./CSS/style.css">
-      <link rel="stylesheet" href="./CSS/reset.css">
-      <link href=" " rel="stylesheet">
-      <title>One Page | Home</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" href="./CSS/reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+  <title>The News | Home</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="container">
+        <div class="box-one">
+          <h1 class="text-principal">Lorem ipsum dolor sit amet</h1>
+          <p class="text-secundario">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu massa sit amet augue
+            consectetur ullamcorper non ac massa.
+          </p>
+
+          <div>
+            <a href="" class="button-one">
+              Botão
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <img src="IMG/image.svg" class="image">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="main-content">
+        <div class="card card-one">
+          <div class="img">
+          </div>
+          <div class="text-card">
+            <h2>Messi no PSG</h2>
+            <p>
+              É oficial: Lionel Messi é jogador do PSG. O anúncio aconteceu na manhã desta terça-feira (10) e o craque argentino já desembarcou na França para ser apresentado pelo novo clube. A apresentação de Messi no PSG vai acontecer nesta quarta-feira (11), no auditório do Parque dos Príncipes.</p>
+          </div>
+        </div>
+
+        <div class="card card-two">
+          <div class="img">
+          </div>
+          <div class="text-card">
+            <h2>Quem tem mais títulos?</h2>
+            <p>
+              Considerando apenas as taças que levantaram por clubes, os dois somam 65 títulos. Agora, 35 para Messi, enquanto Ronaldo têm 30. ... Cristiano Ronaldo, nesse aspecto, contundo, tem a taça mais relevante, a Eurocopa de 2016, com Portugal. Sua outra conquista foi a Liga das Nações da Uefa, na temporada 2018/19.</p>
+          </div>
+        </div>
+
+        <div class="card card-three">
+          <div class="img">
+          </div>
+          <div class="text-card">
+
+            <h2>Como fica o Neymar?</h2>
+            <p>Quem é Neymar? Para o cego, é a luz. Para o faminto, é o pão. Para o sedento, é a fonte de água.</p>
+          </div>
+        </div>
+
+        <div class="card card-four">
+          <div class="img">
+          </div>
+          <div class="text-card">
+            <h2>Lamborghini Urus</h2>
+            <p>Saindo por R$ 2,4 milhões, em 2020 o Urus foi responsável por 11 dos 20 Lamborghini vendidos no país e no primeiro semestre de 2021 o Urus emplacou quatro unidades, enquanto os esportivos tradicionais da marca emplacaram apenas três. Atualmente tem 16 encomendas para o Brasil.</p>
+          </div>
+        </div>
+
+        <div class="card card-five">
+          <div class="img">
+          </div>
+          <div class="text-card">
+            <h2>BMW M8</h2>
+            <p>Trata-se de um modelo que revive a tradição dos cupês de porte grande da marca, que transpiram esportividade. O M8 Gran Coupé chega ao Brasil este mês. Ele desembarca primeiramente em uma versão especial First Edition, que terá somente 400 unidades produzidas, sendo apenas nove destinadas ao mercado brasileiro.</p>
+          </div>
+        </div>
+
+        <div class="card card-six">
+          <div class="img">
+          </div>
+          <div class="text-card">
+            <h2>Mercedes GT 63s</h2>
+            <p>Que carro! Alguns modelos de automóveis marcam a nossa vida, seja por questões afetivas, seja pela beleza, ou mesmo pela forma com que entregam seu desempenho. Embora seja um carro para poucos, custando hoje um pouco mais de R$ 700 mil, o Mercedes-AMG C 63 S é capaz de marcar a vida de qualquer mortal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="container-cadastro">
+    <form class="js" action="" method="post">
+
+      <h2>Para mais notícias entre em contato:</h2>
+
+      <label for="Name"></label>
+      <input type="text" name="Name" id="Name" placeholder="Nome">
+
+      <label for="email"></label>
+      <input type="email" name="email" id="email" placeholder="E-mail">
+
+      <label for="telefone"></label>
+      <input type="tel" name="telefone" id="telefone" placeholder="Telefone">
+
+      <div class="textarea">
+        <textarea name="Mensagem" id="" cols="30" rows="10" placeholder="Mensagem..."></textarea>
+      </div>
+
+      <button type="submit" class="button-two">Enviar mensagem</button>
+
+    </form>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    const sr = ScrollReveal({
+      origin: 'left',
+      distance: '50px',
+      duration: 1000,
+      reset: true
+    });
+    ScrollReveal().reveal('.container', { delay: 20 });
+    ScrollReveal().reveal('.main-content', { delay: 200 });
+    ScrollReveal().reveal('.js', { delay: 20 });
+  </script>
+</body>
+
+</html>
