@@ -80,40 +80,28 @@ header p {
 
 .card {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.2s ease-out;
+  text-decoration: none;
 }
 
-.card .img {
-  padding: 109px;
+.card:hover {
+  transform: scale(1.02);
 }
 
 .card-one .img {
   background-color: #FF6363;
-  background-image: url(../IMG/messi.jpg)
 }
 
-.card-two .img {
-  background-color: #63ECFF;
-  background-image: url(../IMG/cr7.jpg);
+.card .img {
+  height: 200px;
 }
 
-.card-three .img {
-  background-color: #F363FF;
-  background-image: url(../IMG/neymar.jpg)
-}
-
-.card-four .img {
-  background-color: #63FF73;
-  background-image: url(../IMG/trabalho4.jpg);
-}
-
-.card-five .img {
-  background-color: #FFDD63;
-  background-image: url(../IMG/trabalho5.jpg);
-}
-
-.card-six .img {
-  background-color: #6663FF;
-  background-image: url(../IMG/trabalho6.jpg);
+.card .img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .text-card {
@@ -126,6 +114,11 @@ header p {
 .text-card p {
   color: var(--text);
   font-size: 18px;
+  font-style: italic;
+}
+
+.card h2 {
+  color: black;
 }
 
 main h2 {
